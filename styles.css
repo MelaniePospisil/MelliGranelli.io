@@ -1,0 +1,134 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color:rgba(220, 220, 220, 0.863);
+}
+
+/*Header*/
+
+header{
+    background-color: white;
+    top:0;
+    width: 100%;
+    display: inline-flexbox;
+    padding: 10px 0 25px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+nav a{
+    font-size: 1.2rem;
+    color: black;
+    font-style: normal;
+    padding: 0 10px 25px 10px;
+}
+
+header h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+/*Main Content*/
+
+.welcomeimg {
+    width: auto;
+    height: 500px; 
+    padding-top: 50px;
+}
+
+main{
+    display: flexbox;
+}
+
+img{
+    height: 200px;
+    width: auto; 
+}
+
+main h2{
+    font-size: 2.8rem;
+    padding:0;
+}
+
+main p{
+    margin: 5px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+/*Story*/
+.story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+}
+
+.story h2{
+    grid-area: 1/1/span 1/ span 2;
+    margin: 0;
+}
+
+.story p{
+    align-self: center;
+    padding: 20px 30px 10px 30px;
+    grid-area: 2/1/span 1/ span 1;
+}
+
+.story img{
+    width: 100%;
+    height: auto;
+    grid-area: 2/2/span 1/ span 1;
+}
+
+/*Ingredients*/
+.ingredients{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 150px 330px 330px;
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+    grid-auto-columns: auto;
+}
+
+.ingredients h2{
+    grid-area: 1/1/span 1/ span 3;
+    margin: 0;
+}
+
+.ingredients p{
+    align-self: center;
+    justify-self: center;
+    grid-area: 2/1/span 1/ span 3;
+    padding: 10px 20px;
+}
+
+.ingredients figure{
+    align-self: start;
+}
+
+.ingredients img{
+    min-width: 100px;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ingredients figcaption{
+    font-size: 1.3rem;
+    margin: 5px;
+}
