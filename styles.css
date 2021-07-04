@@ -49,6 +49,7 @@ header h1{
 
 main{
     display: flexbox;
+    flex-wrap: wrap;
 }
 
 img{
@@ -57,13 +58,13 @@ img{
 }
 
 main h2{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     padding:0;
 }
 
 main p{
     margin: 5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2.2rem;
 }
 
@@ -95,14 +96,16 @@ main p{
 }
 
 /*Ingredients*/
+/*Ingredients
 .ingredients{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 150px 330px 330px;
+    grid-template-rows: 60px 100px 320px 320px;
     background-color: white;
     margin: 50px;
     padding: 30px;
-    grid-auto-columns: auto;
+    grid-auto-columns: 330px;
+    flex-wrap: wrap ;
 }
 
 .ingredients h2{
@@ -114,21 +117,64 @@ main p{
     align-self: center;
     justify-self: center;
     grid-area: 2/1/span 1/ span 3;
-    padding: 10px 20px;
+    padding: 0 20px;
 }
 
 .ingredients figure{
     align-self: start;
+   
 }
 
 .ingredients img{
-    min-width: 100px;
     max-width: 300px;
     height: auto;
     margin-bottom: 10px;
+    padding-top: 10px;
+
 }
 
 .ingredients figcaption{
-    font-size: 1.3rem;
-    margin: 5px;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+*/
+
+.ingredients{
+    display: flexbox;
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+}
+
+.ingredients h2{
+    margin: 0 0 40px 0;
+}
+
+.ingredients p{
+    align-self: center;
+    justify-self: center;
+    padding: 0 20px;
+}
+
+.img-container{
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.img-container figure{
+    min-width: 100px;
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.ingredients figcaption{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    flex-shrink: 1;
 }
