@@ -124,17 +124,13 @@ main p{
 }
 
 .img-container figure{
-    min-width: 100px;
     max-width: 300px;
     height: auto;
-    flex-shrink: 1;
-    flex-grow: 1;
 }
 
 .ingredients figcaption{
     font-size: 1.2rem;
     margin-top: 5px;
-    flex-shrink: 1;
 }
 
 /*products*/
