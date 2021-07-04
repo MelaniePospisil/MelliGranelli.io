@@ -63,7 +63,7 @@ main h2{
 }
 
 main p{
-    margin: 5px;
+    margin: 0 5px;
     font-size: 1.4rem;
     line-height: 2.2rem;
 }
@@ -90,6 +90,7 @@ main p{
 }
 
 .story img{
+    align-self: center;
     width: 100%;
     height: auto;
     grid-area: 2/2/span 1/ span 1;
@@ -192,8 +193,8 @@ main p{
     background-color: white;
     flex-basis: 230px;
     height: 280px;
-    padding: 10px 0;
-    margin: 20px 0;
+    padding: 10px 0px;
+    margin: 20px 21px;
     min-width: 200px;
     overflow: hidden;
     border: 2px solid gray;
